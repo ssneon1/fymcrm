@@ -1,0 +1,128 @@
+/* Modern, Clean Theme - Fully Responsive */
+:root {
+  --primary-blue: #1A73E8;
+  --secondary-blue: #0F4C81;
+  --light-bg: #F5F7FA;
+  --accent: #3B82F6;
+  --dark-text: #1F1F1F;
+  --light-text: #4d4d4d;
+  --primary: #1A73E8;
+  --primary-dark: #185ABC;
+  --secondary: #0F4C81;
+  --background: #F5F7FA;
+  --surface: #FFFFFF;
+  --text: #1F1F1F;
+  --sidebar-bg: #F5F7FA;
+  --panel-border: #D0D7DE;
+  --text-primary: #1F1F1F;
+  --text-secondary: rgba(31, 31, 31, 0.7);
+  --success: #2DA44E;
+  --warning: #f39c12;
+  --danger: #e74c3c;
+  --gray: #6c757d;
+}
+
+/* Global theme application with responsive considerations */
+body { 
+  background: var(--background); 
+  color: var(--text-primary);
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+}
+
+nav { 
+  background-color: var(--sidebar-bg);
+}
+
+.card { 
+  background: var(--surface); 
+  border-color: var(--panel-border);
+}
+
+.card h3 { 
+  color: var(--text-primary);
+  font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+.card p { 
+  color: var(--text-secondary);
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.stats-section { 
+  background: var(--surface);
+}
+
+.stat-number { 
+  color: var(--primary);
+}
+
+.section-title { 
+  color: var(--text-primary);
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+}
+
+.task-form-container,
+.task-table-container,
+.reports-container,
+.filter-container,
+.service-database,
+.revenue-breakdown,
+.login-card { 
+  background: var(--surface);
+}
+
+th { 
+  background-color: var(--background);
+}
+
+.report-card,
+.task-card,
+.winner-card,
+.report-summary-card,
+.staff-card { 
+  background: var(--surface); 
+  border-color: var(--panel-border);
+}
+
+.tab-container { 
+  background: var(--surface);
+}
+
+.tab-buttons { 
+  background: var(--background);
+}
+
+.nav-links a { 
+  color: var(--text-primary);
+}
+
+.stat-text,
+.text-muted { 
+  color: var(--text-secondary) !important;
+}
+
+.branch-card,
+.service-item { 
+  border-color: var(--panel-border);
+}
+
+/* Responsive adjustments for theme elements */
+@media (max-width: 768px) {
+  body {
+    font-size: clamp(0.875rem, 3vw, 1rem);
+  }
+  
+  .card h3 {
+    font-size: clamp(1rem, 4vw, 1.125rem);
+  }
+  
+  .section-title {
+    font-size: clamp(1.125rem, 5vw, 1.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
